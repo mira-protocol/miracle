@@ -119,7 +119,7 @@ static bool Miracle_clientHandlePacket(Miracle_Client *self, uint8_t id) {
 
 static bool Miracle_clientPing(Miracle_Client *self) {
 	/* TODO: Does not work for checking connection, wait for yeti to add a proper ping
-         packet to the specification */
+	         packet to the specification */
 	return send(self->sock, NULL, 0, 0) >= 0;
 }
 
